@@ -42,7 +42,34 @@
 	    <version>4.20.0</version>
 	</dependency>
 
+<<<<<<< HEAD
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+=======
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>21</source>
+						<target>21</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.5.1</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<!-- <suiteXmlFile>grouping.xml</suiteXmlFile>-->
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<dependencies>
+>>>>>>> parent of 72bb94e ("6th")
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
 		    <artifactId>poi</artifactId>
